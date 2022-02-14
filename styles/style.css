@@ -1,0 +1,123 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #e52162;
+  border-bottom: 2px solid #ffffff;
+}
+
+nav {
+  max-width: 1200px;
+  height: 100px;
+
+  margin: auto;
+
+  background-color: #e52162;
+
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 2px solid #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 60%;
+}
+
+header h1 {
+  color: #fff;
+}
+
+main {
+  max-width: 1200px;
+  padding: 0 24px;
+  margin: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#content button {
+  margin-bottom: 25px;
+}
+
+.resume {
+  padding: 20px;
+  max-width: 700px;
+  margin-top: 50px;
+  flex: 0;
+
+  background-color: #FFF;
+  border-radius: 10px;
+
+  color: #494949;
+}
+
+.available_amount {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+.available_amount span {
+  font-weight: bold;
+  color: #e52162;
+}
+
+#daysContainer {
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.days {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dayofweek {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+
+  background-color: #0d1137;
+  padding: 20px;
+
+  color: #fff;
+
+  border-radius: 10px;
+}
+
+.dayofweek p {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.dayofweek input {
+  padding: 5px 15px;
+}
+
+.button {
+  background-color: #e52162;
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+
+  margin-top: 10px;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.dayofweek button:active {
+  filter: opacity(0.8);
+}

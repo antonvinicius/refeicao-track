@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Refeição Tracking</title>
+  <link rel="shortcut icon" href="./assets/alelo-logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Refeição Tracker</h1>
+      <img src="assets/alelo-logo.png" />
+    </nav>
+  </header>
+
+  <main>
+    <section id="content">
+      <div class="resume">
+        <h1>Eba!</h1>
+        <p class="available_amount">
+          Você pode gastar <span id="amount">R$ 87,88</span> neste final de semana 😅
+        </p>
+      </div>
+      <button class="button" onclick="handleReset()">Limpar Semana</button>
+    </section>
+    <section id="daysContainer">
+      <div class="days">
+        <div class="dayofweek">
+          <p>Segunda-feira</p>
+          <input type="number" placeholder="Valor gasto" id="amountSeg">
+          <button class="button" onclick="saveAmountSeg(document.getElementById('amountSeg').value)">Salvar</button>
+        </div>
+
+        <div class="dayofweek">
+          <p>Terça-feira</p>
+          <input type="number" placeholder="Valor gasto" id="amountTer">
+          <button class="button" onclick="saveAmountTer(document.getElementById('amountTer').value)">Salvar</button>
+        </div>
+
+        <div class="dayofweek">
+          <p>Quarta-feira</p>
+          <input type="number" placeholder="Valor gasto" id="amountQua">
+          <button class="button" onclick="saveAmountQua(document.getElementById('amountQua').value)">Salvar</button>
+        </div>
+
+        <div class="dayofweek">
+          <p>Quinta-feira</p>
+          <input type="number" placeholder="Valor gasto" id="amountQui">
+          <button class="button" onclick="saveAmountQui(document.getElementById('amountQui').value)">Salvar</button>
+        </div>
+
+        <div class="dayofweek">
+          <p>Sexta-feira</p>
+          <input type="number" placeholder="Valor gasto" id="amountSex">
+          <button class="button" onclick="saveAmountSex(document.getElementById('amountSex').value)">Salvar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
